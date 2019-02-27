@@ -6,38 +6,39 @@ const pug = require('gulp-pug')
 const sass = require('gulp-sass')
 sass.compiler = require('node-sass')
 const imagemin = require('gulp-imagemin')
+const distPath = 'docs/' // for github page
 
 function pugToHtml(cb) {
     src('src/*.pug')
         .pipe(pug())
         .pipe(rename({extname: '.htm'}))
-        .pipe(dest('dist/'))
+        .pipe(dest('docs/'))
     cb()
 }
 
 function scssToCss(cb) {
     src('src/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(dest('dist/'))
+        .pipe(dest('docs/'))
     cb()
 }
 
 function js(cb) {
     src('src/*.js')
         .pipe(uglify())
-        .pipe(dest('dist/'))
+        .pipe(dest('docs/'))
     cb()
 }
 
 function imageMin(cb) {
     src('src/assets/images/*')
         .pipe(imagemin())
-        .pipe(dest('dist/assets/images/'))
+        .pipe(dest('docs/assets/images/'))
     cb()
 }
 
 function initWebServer(cb) {
-    src('dist')
+    src('docs')
         .pipe(webserver({
             livereload: true,
             open: true
