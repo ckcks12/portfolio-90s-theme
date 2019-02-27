@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import 'https://unpkg.com/reboot.css@1.0.4/dist/reboot.css';
+body {
+  background-color: #f7f2de;
+  font-family: "굴림";
+  text-align: center; }
+  body > div {
+    width: 960px;
+    max-width: 960px;
+    margin: auto; }
+
+a {
+  color: blue;
+  text-decoration: underline; }
+  a:visited {
+    color: #e7a9e7; }
+  a:hover {
+    text-decoration: underline; }
+  a:active {
+    color: red; }
+
+table {
+  border: 1px solid grey;
+  border-collapse: separate;
+  margin: auto; }
+  table td {
+    border: 1px solid grey;
+    padding: 10px; }
+    table td.green {
+      background-color: lightgreen; }
+    table td.yellow {
+      background-color: darkgoldenrod; }
+    table td.white {
+      background-color: white; }
+    table td img {
+      width: 80px;
+      display: block; }
+
+img {
+  margin: auto;
+  display: inline-block; }
+
+h2 {
+  font-family: "궁서";
+  text-decoration: underline;
+  font-style: italic; }
+
+div.blank {
+  height: 40px; }
+
+div#page-title {
+  text-align: center; }
+  div#page-title img {
+    width: 100px; }
+  div#page-title h1 {
+    display: inline;
+    font-family: "궁서"; }
+
+div#table-content {
+  text-align: center; }
+
+div#profile table {
+  width: 100%; }
+
+div#profile table img {
+  display: inline-block;
+  width: 100px; }
+
+div#profile img.profile {
+  width: 200px; }
+
+div#projects table {
+  max-width: 960px; }
+
+div#projects table img {
+  width: auto;
+  max-width: 400px;
+  max-height: 400px; }

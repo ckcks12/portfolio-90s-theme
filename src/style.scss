@@ -1,0 +1,63 @@
+@import 'https://unpkg.com/reboot.css@1.0.4/dist/reboot.css';
+@import 'scss-lib/global.scss';
+@import 'scss-lib/mixins.scss';
+
+body {
+    background-color: $bg-color;
+    font-family: $gulim;
+    text-align: center;
+    > div {
+        @include container($base-width);
+    }
+}
+a {
+    color: blue;
+    text-decoration: underline;
+    &:visited {
+        color: rgb(231, 169, 231);
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        color: red;
+    }
+}
+table {
+    border: 1px solid grey;
+    border-collapse: separate;
+    margin: auto;
+    td {
+        border: 1px solid grey;
+        padding: 10px;
+        &.green {background-color: lightgreen;}
+        &.yellow {background-color: darkgoldenrod;}
+        &.white {background-color: white;}
+        img {width: 80px; display: block;}
+    }
+}
+img {margin: auto; display: inline-block;}
+h2 {font-family: $goongseo; text-decoration: underline; font-style: italic;}
+div.blank {height: $blank-height;}
+div#page-title {
+    text-align: center;
+    img {
+        width: 100px;
+    }
+    h1 {
+        display: inline;
+        font-family: $goongseo;
+    }
+}
+div#table-content {
+    text-align: center;
+}
+div#profile {
+    table {width: 100%;}
+    table img {display: inline-block; width: 100px;}
+    img.profile { width: 200px;}
+}
+div#projects {
+    table {max-width: $base-width;}
+    table img {width: auto; max-width: 400px; max-height: 400px;}
+}
