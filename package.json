@@ -1,0 +1,30 @@
+{
+  "name": "90s-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ckcks12/90s-portfolio.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ckcks12/90s-portfolio/issues"
+  },
+  "homepage": "https://github.com/ckcks12/90s-portfolio#readme",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^4.11.0",
+    "pug": "^2.0.3"
+  }
+}

@@ -1,0 +1,7 @@
+@import './global.scss';
+
+@mixin container($width) {
+    width: $width;
+    max-width: $width;
+    margin: auto;
+}

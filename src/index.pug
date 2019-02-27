@@ -1,0 +1,228 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="style.css")
+        // Global site tag (gtag.js) - Google Analytics
+        script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-74316508-2')
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-74316508-2');
+
+        title ~ckcks12/portfoilo
+    body
+        div
+            div#page-title
+                img(src="assets/images/firework.gif", alt="firework")
+                h1
+                    u ckcks12의 홈페이지에 오신걸 환영합니다!^^
+                img(src="assets/images/firework.gif", alt="firework")
+            img(src="assets/images/bar.gif", alt="bar")
+            
+            div.blank
+
+            div#table-content
+                h3 
+                    i 목차
+                table
+                    tbody
+                        tr
+                            td.green
+                                img(src="assets/images/dancing-banana.gif", alt="dancing banana")
+                                a(href="#profile") 나를 소개합니다
+                            td.yellow
+                                img(src="assets/images/windows-vs-mac.gif", alt="window vs. mac")
+                                a(href="#projects") 그동안에 업쩍들..
+                            td.white
+                                img(src="assets/images/3d-dog.gif", alt="3d dog")
+                                a(href="#contact") 연락처는..
+                            td
+                                img(src="assets/images/namo.jpg", alt="")
+
+            div.blank
+            img(src="assets/images/yellow-thin-line.gif", alt="")
+            img(src="assets/images/sky-thin-line.gif", alt="")
+            img(src="assets/images/green-thin-line.gif", alt="")
+            div.blank
+
+            div#profile
+                h2 
+                    img(src="assets/images/happy-wb.gif", alt="")
+                    | 나를 소개합니다
+                div.blank
+                table
+                    tbody
+                        tr
+                            //- td(rowspan="2147483647")
+                            //-     img.profile(src="assets/images/profile.jpg", alt="face picture")
+                            td 이름이 무 엇인가요?
+                            td 
+                                img(src="assets/images/rainbow-smile.gif", alt="")
+                                | 이은찬
+                        tr
+                            td 어디에 살아요?
+                            td 
+                                | 대한민국 서울 입니다
+                                img(src="assets/images/moon.gif", alt="")
+
+            div.blank
+            img(src="assets/images/sea-line.gif", alt="")
+            div.blank
+
+            div#projects
+                h2 
+                    img(src="assets/images/writing-pen.gif", alt="")
+                    | 그동안에 업쩍들..
+                img(src="assets/images/heavy-disk.gif", alt="")
+                div.blank
+                table
+                    tbody
+                        tr
+                            td
+                                img(src="assets/images/play-with-your-algorithm.gif")
+                            td 
+                                h3 play with your algorithm
+                                pre.
+                                    고1때 정올 공모전에 제출 했었던 프로그램입니다.
+                                    GUI로 순서도를 작성하고 자체 인터프리터로 실행합니다.
+                                    내부적으로 스크립트 코드로 변환되며 exe파일로 컴파일과 빌드할 수 있습니다.
+                                a(href="https://github.com/ckcks12/PlayWithYourAlgorithm") 깃허브
+                        tr
+                            td
+                                img(src="assets/images/project7302.gif")
+                            td
+                                h3 project 7302
+                                pre.
+                                    고3때 정올 공모전에 제출했던 작품으로서 
+                                    여러가지 유틸리티 기능을 가지고 있는 윈도우 전용 응용 프로그램입니다.
+                                    간단하게 창 투명화와 마우스를 따라다니는 메모장부터
+                                    직접 만든 OCR 엔진을 이용한 VBScript 매크로까지 구현하였습니다.
+                                a(href="https://github.com/ckcks12/Project_EJ7302") 깃허브
+                        tr
+                            td
+                            td
+                                h3 전국정보경시대회 창작프로그래밍 은상
+                                pre.
+                                    제한시간 2시간동안 주어진 주제에 대해 창작 프로그래밍을 하여
+                                    산출물을 내는 대회입니다.
+                        tr
+                            td
+                                img(src="assets/images/easy-programming.png")
+                            td
+                                h3 프로그래밍이 가장 쉬웠어요
+                                pre.
+                                    Docker 기반 교육용 온라인 컴파일러입니다.
+                                    다른 한쪽엔 마크다운으로 작성한 깃허브 강의를 불러올 수 있습니다.
+                                a(href="https://www.youtube.com/watch?v=aw8LCXpuH2Y") 유투브
+                        tr
+                            td
+                                img(src="assets/images/sgen.jpg")
+                            td
+                                h3 삼성SDS sGen Club 프로젝트 은상
+                                pre.
+                                    삼성SDS sGen Club 15년도 프로젝트에서
+                                    앱 설치 없이 번호표 발급 및 알림 서비스 기획 및 개발로
+                                    은상을 수상하였습니다.
+                        tr
+                            td
+                                img(src="assets/images/safe-desk.jpg")
+                            td
+                                h3 Safe Desk
+                                pre.
+                                    저성능 웹캠 하나만으로도 편의점과 같은 곳에서
+                                    강도의 위협을 감지할 수 있는 Star Skeleton 기반 CCTV 분석 및 
+                                    위험도 측정 알고리즘입니다.
+                                a(href="https://github.com/ckcks12/SafeDesk") 깃허브
+                                br
+                                a(href="https://www.youtube.com/uwZ1W-tKSrI") 유투브
+                                br
+                                a(href="https://www.slideshare.net/EunchanLee1/safe-desk?qid=6d2b8d61-cea6-4500-9a4e-e5a48381470b&v=&b=&from_search=2") 슬라이드 쉐어
+                        tr
+                            td
+                                img(src="assets/images/ubot.png")
+                            td
+                                h3 U-BOT
+                                pre.
+                                    대학교 교내 공지사항과 과제 등을
+                                    카카오톡을 통해 알림을 내용과 함께 보내는 서비스입니다.
+                        tr
+                            td
+                                img(src="assets/images/sayahae.png")
+                            td
+                                h3 사야해
+                                pre.
+                                    NLP 기반 상품평 분석 엔진을 제작하여
+                                    상품에 대한 객관적인 지표를 제공합니다.
+                                a(href="https://www.slideshare.net/EunchanLee1/sayahae") 슬라이드 쉐어
+                        tr
+                            td
+                                img(src="assets/images/cookie.png")
+                            td
+                                h3 Google Startup Weekend 2017 Best UI/UX
+                                pre.
+                                    하루 일상에 지친 사람들에게 힘이 되어주는
+                                    왈이 서비스의 프로토 타입.
+                                    Kotlin 기반의 UI/UX 를 작성하였습니다.
+                                a(href="https://github.com/CookieTeam/Cookie") 깃허브
+                        tr
+                            td
+                                img(src="assets/images/lantern.png")
+                            td
+                                h3 Lantern
+                                pre.
+                                    안드로이드 및 유니티용 APM
+                                    리눅스 프로파일링 기법부터 안드로이드 통신에 특화된
+                                    네트워크 프로파일링 까지 직접 연구하고 개발하였습니다.
+                                    프론트 영역을 전담하여 d3 기반으로 직접 차트를 개발하였습니다.
+                                    이 프로젝트로 소프트웨어 7기 창업인증 하였습니다.
+                                a(href="https://github.com/teamthresh/") 깃허브
+                                br
+                                a(href="https://www.youtube.com/embed/hi7Fvphwkh8") 유투브
+                        tr
+                            td
+                                img(src="assets/images/x-twitter.png")
+                            td
+                                h3 네트워크 마이닝을 통한 트위터 분석
+                                p.
+                                    맞춤형 트윗 추천 시스템 구축을 위한 트위터 데이터 수집 조휘연, 김혜진, 이은찬, 이민정, 남용욱, 김용혁 한국멀티미디어학회 춘계학술발표대회 논문집 제 20 권 1 호 (2017) pp 254-255
+                                a(href="https://github.com/xTwitter") 깃허브
+                        tr
+                            td
+                                img(src="assets/images/deep-lol.png")
+                                img(src="assets/images/deep-lol-graph.png")
+                            td
+                                h3 딥러닝 기반 롤 챔피언 조합 추천 시스템
+                                pre.
+                                    딥러닝 기반으로 롤 챔피언의 조합을 추천해주는 서비스입니다.
+                                span 딥롤(준비중)
+
+
+            div.blank
+            img(src="assets/images/cat-catching-fly.gif", alt="", width="200")
+            div.blank
+
+            div#contact
+                h2 연락처는..
+                    img(src="assets/images/welcome-take-it-off.gif")
+                div.blank
+                a(href="http://github.com/ckcks12") 나의 깃허브 &nbsp;
+                a(href="mailto:ckcks12@naver.com")
+                    img(src="assets/images/blue-button-email.gif", alt="")
+            
+            div.blank
+            div.blank
+
+            img(src="assets/images/christmas-lights.png")
+            p
+                img(src="assets/images/arrow-leaving-door.gif", alt="")
+                u 만든이 : 
+                    b 나 
+                i 나의 홈페이지 끝 여기까지입니다 들러주셔서 감사합니다.
+                img(src="assets/images/waving-hand.gif", alt="")
+
+            div.blank
+            div.blank
